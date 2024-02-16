@@ -1,0 +1,49 @@
+{
+  "name": "PlayerNameCards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rbxts/compiler-types": "2.2.0-types.0",
+    "@rbxts/types": "^1.0.754",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@rbxts/ceive-im-gizmo": "3.2.0-ts.0",
+    "@rbxts/luau-polyfill-internal": "1.2.3-ts.0",
+    "@rbxts/pretty-roact-hooks": "npm:@rbxts/pretty-react-hooks@^0.3.3",
+    "@rbxts/promise-forward": "^1.0.5",
+    "@rbxts/react-internal": "^0.2.2",
+    "@rbxts/react-reconciler-internal": "^0.2.1",
+    "@rbxts/react-roblox": "^0.2.0",
+    "@rbxts/remo": "^1.3.1",
+    "@rbxts/roact": "npm:@rbxts/react-ts",
+    "@rbxts/roact-compat-internal": "^0.3.1",
+    "@rbxts/roact-reflex": "npm:@rbxts/react-reflex@^0.2.0",
+    "@rbxts/rodux": "3.0.0-ts.3",
+    "@rbxts/rowindcss": "^1.3.1",
+    "@rbxts/scheduler-internal": "^0.2.1",
+    "@rbxts/services": "^1.5.4",
+    "@rbxts/set-timeout": "^1.1.2",
+    "@rbxts/shared-internal": "^0.2.1",
+    "rbxts-transform-debug": "^2.2.0",
+    "rbxts-transformer-private": "^1.0.1",
+    "rbxts-transformer-services": "^1.1.1",
+    "rbxts-transformer-switchcase": "^1.0.1",
+    "rbxts-transformer-t": "^1.1.5"
+  }
+}
