@@ -4,7 +4,6 @@ import { Players } from "@rbxts/services";
 const localPlayer = Players.LocalPlayer;
 
 const GetPlatform = () => {
-    print('getting platform');
     if (UserInputService.MouseEnabled || UserInputService.KeyboardEnabled) {
         remotes.platform.fire("PC");
         return;
@@ -25,22 +24,13 @@ const GetPlatform = () => {
     return;
 }
 
-GetPlatform();
-
 const UpdatePing = () => {
     const ping = localPlayer.GetNetworkPing() * 1000;
     remotes.ping.fire(ping);
 }
 
-localPlayer.CharacterAdded.Connect(() => {
-    GetPlatform();
-    UpdatePing();
-})
-
-UpdatePing();
-
 task.spawn(() => {
-    while (task.wait(10)) {
+    while (task.wait(0.5)) {
         UpdatePing();
         GetPlatform();
     }
